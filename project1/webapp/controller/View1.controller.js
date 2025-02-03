@@ -7,7 +7,7 @@ sap.ui.define([
         onInit() {
         },
         onPress: function(){
-            this.getOwnerComponent().getRouter().navTo("RouteView2")
+            this.getOwnerComponent().getRouter().navTo("RouteView2");
            }
     });
 });

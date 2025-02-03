@@ -1,9 +1,10 @@
 <mvc:View controllerName="com.demo.project1.controller.View2"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m">
-    <Page id="page2" title="{i18n>title}">
+    <Page id="page2" title="{i18n>title}" showNavButton="true" navButtonPress="onPress">
     <content> 
     <Text  id="_IDGenTexttext" text ="Im View 2"></Text>
+    <!-- <Button id="_IDGenButton1" text="Back" press="onPress"></Button> -->
     </content>
      </Page>
 </mvc:View>
