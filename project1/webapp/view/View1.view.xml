@@ -4,7 +4,7 @@
     <Page id="page" title="{i18n>title}">
     <content> 
     <Text id="_IDGenText" text="Hello SAP UI5"></Text>
-    <Button id="_IDGenButton" text="Button"></Button>
+    <Button id="_IDGenButton" text="Button1" press="onpress"></Button>
     </content>
      </Page>
 </mvc:View>

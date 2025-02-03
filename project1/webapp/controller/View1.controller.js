@@ -5,6 +5,9 @@ sap.ui.define([
 
     return Controller.extend("com.demo.project1.controller.View1", {
         onInit() {
+        },
+        onPress: function(){
+         this.getOwnerComponent().getRouter().navto("RouteView2")
         }
     });
 });
