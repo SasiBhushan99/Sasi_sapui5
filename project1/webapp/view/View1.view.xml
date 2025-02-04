@@ -6,16 +6,16 @@
     <!-- <Text id="_IDGenText" text="Hello SAP UI5"></Text>
     <Button id="_IDGenButton" text="Button1" press="onPress" ></Button> -->
     <Text id="_IDGenText1" text="Welcome to SAPUI5" textAlign="Center" width="100%" class="sapMH3FontSize"></Text>
-    <Label text="Student Name:" required="true" class="sapUiMediumMarginBegin"></Label>
-    <Input width="30%" class="sapUiTinyMarginBegin"></Input>
-    <Button text="Submit" type="Accept" class="sapUiTinyMarginBegin"></Button>
+    <Label id="_IDGenLabel1" text="Student Name:" required="true" class="sapUiMediumMarginBegin"></Label>
+    <Input id="_IDGenInput" width="30%" class="sapUiTinyMarginBegin"></Input>
+    <Button id="_IDGenButton" text="Submit" type="Accept" class="sapUiTinyMarginBegin" press="onSubmit"></Button>
     </content>
     <footer>
-    <Bar >
+    <Bar id="_IDGenBar" >
 
     <contentRight>
-    <Button text="Save" type="Accept"></Button>
-    <Button text="Cancel" type="Reject"></Button>
+    <Button id="_IDGenButton1" text="Save" type="Accept"></Button>
+    <Button id="_IDGenButton2" text="Cancel" type="Reject"></Button>
     </contentRight>
    
     </Bar>

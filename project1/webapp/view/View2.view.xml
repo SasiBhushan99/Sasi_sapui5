@@ -1,10 +1,81 @@
 <mvc:View controllerName="com.demo.project1.controller.View2"
     xmlns:mvc="sap.ui.core.mvc"
-    xmlns="sap.m">
-    <Page id="page2" title="{i18n>title}" showNavButton="true" navButtonPress="onPress">
+    xmlns="sap.m" xmlns:l="sap.ui.layout">
+    <Page id="page2" title="Iam in View 2" showNavButton="true" navButtonPress="onPress">
     <content> 
-    <Text  id="_IDGenTexttext" text ="Im View 2"></Text>
-    <!-- <Button id="_IDGenButton1" text="Back" press="onPress"></Button> -->
+    <Panel headerText="Employee Details" expandable="true" expanded="true">
+     <l:Grid defaultSpan="L3 M3" vSpacing="0" >
+     <l:content>
+     <Label text="Employee Id" class="sapUiTinyMarginTop"></Label>
+     <Input ></Input>
+     <Label text="Employee Name" class="sapUiTinyMarginTop"></Label>
+     <Input ></Input>
+      <Label text="Employee Desg" class="sapUiTinyMarginTop"></Label>
+     <Input ></Input>
+      <Label text="Employee Skill" class="sapUiTinyMarginTop" ></Label>
+    <Input ></Input>
+      <Label text="Employee Email" class="sapUiTinyMarginTop"></Label>
+     <Input ></Input>
+      <Label text="Employee Phone.no" class="sapUiTinyMarginTop"></Label>
+     <Input ></Input>
+     </l:content>
+     </l:Grid>
+     </Panel>
+     <!-- Family panel -->
+
+     <Panel headerText="Family Details" expandable="true">
+     <l:Grid defaultSpan="L2 M2" vSpacing="0" >
+     <l:content>
+     <Label text="Employee Id" class="sapUiTinyMarginTop"></Label>
+     <Input ></Input>
+     <Label text="Employee Name" class="sapUiTinyMarginTop"></Label>
+     <Input ></Input>
+      <Label text="Employee Desg" class="sapUiTinyMarginTop"></Label>
+     <Input ></Input>
+      <Label text="Employee Skill" class="sapUiTinyMarginTop"></Label>
+    <Input ></Input>
+      <Label text="Employee Email" class="sapUiTinyMarginTop"></Label>
+     <Input ></Input>
+      <Label text="Employee Phone.no" class="sapUiTinyMarginTop"></Label>
+     <Input ></Input>
+     </l:content>
+     </l:Grid>
+     </Panel>
+     <!-- zigzag  design  -->
+     <Panel headerText="Family Details" expandable="true">
+     <l:Grid defaultSpan="L2 M2" vSpacing="0" >
+     <l:content>
+     <Label text="Employee Id" class="sapUiTinyMarginTop">
+     <layoutData>
+     <l:GridData span="L3 M3"></l:GridData>
+     </layoutData>
+     </Label>
+     <Input >
+     <layoutData>
+     <l:GridData span="L9 M9"></l:GridData>
+     </layoutData>
+     </Input>
+     <Label text="Employee Name" class="sapUiTinyMarginTop"></Label>
+     <Input ></Input>
+      <Label text="Employee Desg" class="sapUiTinyMarginTop"></Label>
+     <Input ></Input>
+      <Label text="Employee Skill" class="sapUiTinyMarginTop">
+      <layoutData>
+     <l:GridData span="L3 M3"></l:GridData>
+     </layoutData>
+      </Label>
+    <Input>
+    <layoutData>
+     <l:GridData span="L9 M9"></l:GridData>
+     </layoutData>
+    </Input>
+      <!-- <Label text="Employee Email" class="sapUiTinyMarginTop"></Label>
+     <Input ></Input>
+      <Label text="Employee Phone.no" class="sapUiTinyMarginTop"></Label>
+     <Input ></Input> -->
+     </l:content>
+     </l:Grid>
+     </Panel>
     </content>
      </Page>
 </mvc:View>
