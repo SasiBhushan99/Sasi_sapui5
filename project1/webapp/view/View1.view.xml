@@ -3,8 +3,22 @@
     xmlns="sap.m">
     <Page id="page" title="{i18n>title}">
     <content> 
-    <Text id="_IDGenText" text="Hello SAP UI5"></Text>
-    <Button id="_IDGenButton" text="Button1" press="onPress" ></Button>
+    <!-- <Text id="_IDGenText" text="Hello SAP UI5"></Text>
+    <Button id="_IDGenButton" text="Button1" press="onPress" ></Button> -->
+    <Text id="_IDGenText1" text="Welcome to SAPUI5" textAlign="Center" width="100%" class="sapMH3FontSize"></Text>
+    <Label text="Student Name:" required="true" class="sapUiMediumMarginBegin"></Label>
+    <Input width="30%" class="sapUiTinyMarginBegin"></Input>
+    <Button text="Submit" type="Accept" class="sapUiTinyMarginBegin"></Button>
     </content>
+    <footer>
+    <Bar >
+
+    <contentRight>
+    <Button text="Save" type="Accept"></Button>
+    <Button text="Cancel" type="Reject"></Button>
+    </contentRight>
+   
+    </Bar>
+    </footer>
      </Page>
 </mvc:View>
