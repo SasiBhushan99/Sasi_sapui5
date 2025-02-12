@@ -1,15 +1,42 @@
 <mvc:View controllerName="com.demo.project1.controller.View1"
     xmlns:mvc="sap.ui.core.mvc"
-    xmlns="sap.m">
+    xmlns="sap.m" xmlns:l="sap.ui.layout"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:core="sap.ui.core">
     <Page id="page" title="{i18n>title}">
     <content> 
-    <!-- <Text id="_IDGenText" text="Hello SAP UI5"></Text>
-    <Button id="_IDGenButton" text="Button1" press="onPress" ></Button> -->
-    <Text id="_IDGenText1" text="Welcome to SAPUI5" textAlign="Center" width="100%" class="sapMH3FontSize"></Text>
-    <Label id="_IDGenLabel1" text="Student Name:" required="true" class="sapUiMediumMarginBegin"></Label>
-    <Input id="_IDGenInput" width="30%" class="sapUiTinyMarginBegin"></Input>
-    <Button id="_IDGenButton" text="Submit" type="Accept" class="sapUiTinyMarginBegin" press="onSubmit"></Button>
+        <f:SimpleForm title="Employee Details - Simple form" editable="true"
+        layout="ResponsiveGridLayout" labelSpanL="5" labelSpanM="5"
+        emptySpanL="0" emptySpanM="0" columnsL="3" columnsM="3">
+        <f:content>
+         <core:Title text="Basic Details"></core:Title>
+        <Label text="Employee Id" ></Label>
+         <Input ></Input>
+          <Label text="Employee Name" ></Label>
+         <Input ></Input>
+         <core:Title text="Other Details"></core:Title>
+          <Label text="Employee City" ></Label>
+         <Input ></Input>
+          <Label text="Employee Skill" ></Label>
+         <Input ></Input>
+         <core:Title text="Contact Details"></core:Title>
+          <Label text="Employee Phone" ></Label>
+         <Input ></Input>
+          <Label text="Employee Email" ></Label>
+         <Input ></Input>
+         <core:Title text="Nominee Details"></core:Title>
+          <Label text="Nominee Name" ></Label>
+         <Input ></Input>
+          <Label text="Nominee email" ></Label>
+         <Input ></Input>
+        </f:content>
+        
+        </f:SimpleForm> 
+   
+    
     </content>
+
+    
     <footer>
     <Bar id="_IDGenBar" >
 
